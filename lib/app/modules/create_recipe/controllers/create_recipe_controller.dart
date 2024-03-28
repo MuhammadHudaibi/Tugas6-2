@@ -33,8 +33,8 @@ class CreateRecipeController extends GetxController {
 
       Get.back();
       Get.snackbar(
-        'Success',
-        'Data added successfully',
+        'Berhasil',
+        'Berhasil menambhakan data',
         snackPosition: SnackPosition.BOTTOM,
         duration: Duration(seconds: 2),
         margin: EdgeInsets.all(12),

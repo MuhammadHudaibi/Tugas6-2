@@ -18,16 +18,16 @@ class UpdateRecipeView extends StatelessWidget {
             title: Text(
               'Perbaharui Resep',
               style: GoogleFonts.poppins(color: Colors.white),
-            ), // Ubah warna teks app bar
-            backgroundColor: Colors.blueAccent, // Ubah warna latar belakang app bar
+            ),
+            backgroundColor: Colors.blueAccent,
             elevation: 0,
             iconTheme: IconThemeData(color: Colors.white),
           ),
           body: Padding(
-            padding: const EdgeInsets.all(20), // Berikan padding pada keseluruhan body
+            padding: const EdgeInsets.all(20),
             child: ListView(
               children: [
-                SizedBox(height: 20), // Berikan ruang kosong antara judul dan input fields
+                SizedBox(height: 20),
                 TextFormField(
                   controller: controller.titleController,
                   decoration: InputDecoration(
@@ -36,10 +36,10 @@ class UpdateRecipeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  style: GoogleFonts.poppins(), // Ganti font teks
+                  style: GoogleFonts.poppins(),
                   textInputAction: TextInputAction.next,
                 ),
-                SizedBox(height: 20), // Berikan ruang kosong antara input fields
+                SizedBox(height: 20),
                 TextFormField(
                   controller: controller.timeEstimationController,
                   decoration: InputDecoration(
@@ -48,10 +48,10 @@ class UpdateRecipeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  style: GoogleFonts.poppins(), // Ganti font teks
+                  style: GoogleFonts.poppins(),
                   textInputAction: TextInputAction.next,
                 ),
-                SizedBox(height: 20), // Berikan ruang kosong antara input fields
+                SizedBox(height: 20),
                 TextFormField(
                   controller: controller.instructionsController,
                   decoration: InputDecoration(
@@ -60,12 +60,12 @@ class UpdateRecipeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  style: GoogleFonts.poppins(), // Ganti font teks
+                  style: GoogleFonts.poppins(),
                   textInputAction: TextInputAction.newline,
-                  keyboardType: TextInputType.multiline, // Mengizinkan input multiline
+                  keyboardType: TextInputType.multiline,
                   maxLines: null,
                 ),
-                SizedBox(height: 20), // Berikan ruang kosong antara input fields
+                SizedBox(height: 20),
                 TextFormField(
                   controller: controller.ingredientsController,
                   decoration: InputDecoration(
@@ -74,12 +74,12 @@ class UpdateRecipeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  style: GoogleFonts.poppins(), // Ganti font teks
+                  style: GoogleFonts.poppins(), 
                   textInputAction: TextInputAction.newline,
                   keyboardType: TextInputType.multiline,
                   maxLines: null,
                 ),
-                SizedBox(height: 20), // Berikan ruang kosong antara input fields dan tombol
+                SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     String recipeId = Get.arguments['id'];
@@ -93,13 +93,13 @@ class UpdateRecipeView extends StatelessWidget {
                   },
                   child: Text(
                     'Save Changes',
-                    style: GoogleFonts.poppins(color: Colors.white), // Ganti font teks
+                    style: GoogleFonts.poppins(color: Colors.white),
                   ),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueAccent[100], // Ubah warna tombol
-                    padding: EdgeInsets.symmetric(vertical: 15), // Ubah padding tombol
+                    backgroundColor: Colors.blueAccent[100],
+                    padding: EdgeInsets.symmetric(vertical: 15),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20), // Ubah sudut tombol
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                 ),

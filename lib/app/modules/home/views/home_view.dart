@@ -13,11 +13,11 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: Text('Resep', style: GoogleFonts.poppins(color: Colors.white)),
         centerTitle: true,
-        backgroundColor: Colors.blueAccent, // Mengubah warna latar belakang app bar
-        elevation: 0, // Menghilangkan bayangan di bawah app bar
+        backgroundColor: Colors.blueAccent,
+        elevation: 0,
       ),
       body: Container(
-        margin: EdgeInsets.all(10), // Memberikan margin di atas konten utama
+        margin: EdgeInsets.all(10),
         child: StreamBuilder(
           stream: controller.getRecipesStream(),
           builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -38,7 +38,7 @@ class HomeView extends StatelessWidget {
                   elevation: 4,
                   margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15), // Mengatur sudut card
+                    borderRadius: BorderRadius.circular(15), 
                   ),
                   color: Colors.blueAccent[100],
                   child: ListTile(
@@ -91,11 +91,11 @@ class HomeView extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Get.toNamed('/create-recipe'); // Menavigasi ke halaman CreateRecipeView
+          Get.toNamed('/create-recipe');
         },
         child: Icon(Icons.add, color: Colors.white,),
         backgroundColor: Colors.blueAccent,
-        shape: CircleBorder(), // Mengubah warna floating action button
+        shape: CircleBorder(),
       ),
     );
   }

@@ -38,8 +38,8 @@ class UpdateRecipeController extends GetxController {
 
       Get.back();
       Get.snackbar(
-        'Success',
-        'Data updated successfully',
+        'Berhasil',
+        'Berhasil meperbaharui data',
         snackPosition: SnackPosition.BOTTOM,
         duration: Duration(seconds: 2),
         margin: EdgeInsets.all(12),
