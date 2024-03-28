@@ -52,7 +52,7 @@ class HomeView extends StatelessWidget {
                       children: [
                         SizedBox(height: 5),
                         Text(
-                          'Estimasi Waktu: ${recipe['time_estimation']}',
+                          'Estimasi Waktu: ${recipe['time_estimation']} menit',
                           style: GoogleFonts.poppins(fontSize: 14, color: Colors.white),
                         ),
                         SizedBox(height: 5),
