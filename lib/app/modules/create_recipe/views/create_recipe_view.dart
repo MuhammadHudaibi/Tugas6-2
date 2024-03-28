@@ -10,7 +10,7 @@ class CreateRecipeView extends GetView<CreateRecipeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tambah Menu', style: GoogleFonts.poppins(color: Colors.white)),
+        title: Text('Tambah Resep', style: GoogleFonts.poppins(color: Colors.white)),
         backgroundColor: Colors.blueAccent,
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.white),

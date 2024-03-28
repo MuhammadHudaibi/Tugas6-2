@@ -16,7 +16,7 @@ class UpdateRecipeView extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              'Update Recipe',
+              'Perbaharui Resep',
               style: GoogleFonts.poppins(color: Colors.white),
             ), // Ubah warna teks app bar
             backgroundColor: Colors.blueAccent, // Ubah warna latar belakang app bar
